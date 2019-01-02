@@ -1,35 +1,39 @@
-<h1>Voter List</h1>
+<div class="voter-list">
 
-<table>
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Street</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-      <th>Vote</th>
-    </tr>
-  </thead>
+  <h1>Voter List</h1>
 
-  <tbody>
-    <% @voters.each do |voter| %>
-    <tr>
-      <td><%=voter.first_name %> </td>
-      <td><%=voter.last_name %> </td>
-      <td><%=voter.street %> </td>
-      <td><%=voter.city %>  </td>
-      <td><%=voter.state %> </td>
-      <td><%=voter.lat %>  </td>
-      <td><%=voter.lng %> </td>
-      <td><%=voter.vote %> </td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Vote</th>
+      </tr>
+    </thead>
 
-<br>
+    <tbody>
+      <% @voters.each do |voter| %>
+      <tr>
+        <td><%=voter.first_name %> </td>
+        <td><%=voter.last_name %> </td>
+        <td><%=voter.street %> </td>
+        <td><%=voter.city %>  </td>
+        <td><%=voter.state %> </td>
+        <td><%=voter.lat %>  </td>
+        <td><%=voter.lng %> </td>
+        <td><%=voter.vote %> </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'Add New Voter', new_voter_path %>
+  <br>
+
+  <%= link_to 'Add New Voter', new_voter_path %>
+
+</div>

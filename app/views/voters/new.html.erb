@@ -1,44 +1,55 @@
-<h1>Enter A New Voter</h1>
+<div class="voter-form">
 
-<%= form_for(@voter) do |f| %>
-  <div class="field">
-    <%= f.label :first_name, "First Name" %><br />
-    <%= f.text_field :first_name %>
+  <h1>New Voter</h1>
+
   </div>
+  <%= form_for(@voter) do |f| %>
+    <div class="field">
+      <%= f.label :first_name, "First Name" %><br />
+      <%= f.text_field :first_name %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.label :last_name, "Last Name" %><br />
-    <%= f.text_field :last_name %>
-  </div>
+    <div class="field">
+      <%= f.label :last_name, "Last Name" %><br />
+      <%= f.text_field :last_name %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.label :street, "Stree Address" %><br />
-    <%= f.text_field :street %>
-  </div>
+    <div class="field">
+      <%= f.label :street, "Stree Address" %><br />
+      <%= f.text_field :street %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
-  </div>
+    <div class="field">
+      <%= f.label :city %><br />
+      <%= f.text_field :city %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.label :state, "State Abbreviation" %><br />
-    <%= f.text_field :state %>
-  </div>
+    <div class="field">
+      <%= f.label :state, "State Abbreviation" %><br />
+      <%= f.text_field :state %>
+    </div>
+    <br>
 
-  <div class="field">
-    <%= f.label :vote, "How do you vote for this candidate?" %><br />
-    <%= f.radio_button :vote, 'Support' %> Support
-    <%= f.radio_button :vote, 'Oppose' %> Oppose
-    <%= f.radio_button :vote, 'Undecided' %> Undecided
-  </div>
+    <div class="field">
+      <%= f.label :vote, "Your vote for this candidate?" %><br />
+      <%= f.radio_button :vote, 'Support' %> Support <br>
+      <%= f.radio_button :vote, 'Oppose' %> Oppose <br>
+      <%= f.radio_button :vote, 'Undecided' %> Undecided <br>
+    </div>
+    <br>
 
-  <div class="actions">
-    <%= f.submit "Cast Vote" %>
-  </div>
+    <div class="actions">
+      <%= f.submit "Cast Vote" %>
+    </div>
 
-<% end %>
+  <% end %>
 
-<br>
+  <br>
 
-<%= link_to 'Voter List', voters_path %>
+  <%= link_to 'Voter List', voters_path %>
+
+<div class="voter-form">
