@@ -1,0 +1,40 @@
+<h1>Enter A New Voter</h1>
+
+<%= form_for(@voter) do |f| %>
+  <div class="field">
+    <%= f.label :first_name, "First Name" %><br />
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name, "Last Name" %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :street, "Stree Address" %><br />
+    <%= f.text_field :street %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state, "State Abbreviation" %><br />
+    <%= f.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :vote, "How do you vote for this candidate?" %><br />
+    <%= f.radio_button :vote, 'Support' %> Support
+    <%= f.radio_button :vote, 'Oppose' %> Oppose
+    <%= f.radio_button :vote, 'Undecided' %> Undecided
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Cast Vote" %>
+  </div>
+
+<% end %>
