@@ -54,3 +54,4 @@ editor.
 12. $ bundle exec rake db:create
 13. $ bundle exec rails generate migration create_voters
 14. $ bundle exec rake db:migrate && bundle exec rake db:rollback && bundle exec rake db:migrate
+
