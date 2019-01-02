@@ -45,3 +45,13 @@ editor.
 09. Add a '.env' file at the root of the project and add the following:
 
     GOOGLE_API_KEY="<your private key here>"
+
+10. Edit '.gitignore' by adding '.env' under
+
+      Ignore master key for decrypting credentials and more.
+
+11. $ bundle
+12. $ bundle exec rake db:create
+13. $ bundle exec rails generate migration create_voters
+14. $ bundle exec rake db:migrate && bundle exec rake db:rollback && bundle exec rake db:migrate
+
