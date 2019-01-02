@@ -55,3 +55,10 @@ editor.
 13. $ bundle exec rails generate migration create_voters
 14. $ bundle exec rake db:migrate && bundle exec rake db:rollback && bundle exec rake db:migrate
 
+15. To start app:
+
+    $ rails s
+
+16. Visit:
+
+    http://localhost:3000/
